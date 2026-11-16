@@ -1,4 +1,8 @@
 <?php
+//connection mes browserit dhe serverit 
+//primary key veq 1 per tabel
+//foreign key bejke lidhje mes dy tabelave
+
 try{
 $conn=new PDO("mysql:host=localhost;dbname=digital2","root","");
 $username="riga";
