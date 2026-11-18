@@ -1,15 +1,4 @@
-<?php
-include_once ('connection.php');
-//kejt qka kena mrena connection fute ne kete file njehere
 
-if(isset($_POST['username'],$_POST['password'])){
-    $username=$_POST['username'];
-    $password=$_POST['password'];
-
-}
-//issetkontrollon a eshte e plotesume kolona e usernamit dhe passwordit
-
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,13 +8,13 @@ if(isset($_POST['username'],$_POST['password'])){
 </head>
 <body>
 
-<form method="get">
+<form method="post" action="add.php">
 
     <label for="username">Username:</label>
     <input type="text" id="username" name="username">
     <label for="password">Password:</label>
-    <input type="Password" id="Password" name="Password">
-    <input type="sumbit" value="sumbit"> 
+    <input type="password" id="password" name="password">
+    <input type="submit" name="submit" value="submit"> 
 </form>
 
 </body>
