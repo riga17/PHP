@@ -3,7 +3,7 @@
 $host="localhost";
 $user="root";
 $pass="";
-$dbname="Tuana";
+$dbname="digital2";
 
 
 

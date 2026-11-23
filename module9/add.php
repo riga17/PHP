@@ -5,6 +5,7 @@ include_once ('connection.php');
 if(isset($_POST['submit'])){
     $username=$_POST['username'];
     $password=$_POST['password'];
+    $password=password_hash("12345678",PASSWORD_DEFAULT);
 
     $sql="insert into users (username,password)
     values(:username,:password)";
